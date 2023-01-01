@@ -383,7 +383,7 @@ describe('electron:build', () => {
             external: '^0.0.1'
           }
         },
-        undefined,
+        null,
         2
       )
     )
@@ -954,7 +954,7 @@ describe('Custom webpack chain', () => {
   })
 })
 
-describe('testWithSpectron', async () => {
+describe('testWithSpectron', () => {
   // Mock portfinder's returned port
   portfinder.getPortPromise = jest.fn().mockResolvedValue('expectedPort')
 
